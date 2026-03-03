@@ -98,10 +98,26 @@
   </script>
 
   <!-- App -->
-  <script type="text/babel" src="EmpireCoach.jsx"></script>
-  <script type="text/babel">
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<EmpireCoach />);
+  <script type="text/babel" data-type="module">
+    // Check if React loaded
+    if (!window.React || !window.ReactDOM) {
+      document.getElementById('root').innerHTML = '<div class="loading-screen"><div class="loading-logo">Erreur: React non chargé</div></div>';
+    } else {
+      // Fetch and execute the JSX
+      fetch('EmpireCoach.jsx')
+        .then(res => res.text())
+        .then(code => {
+          // Execute the JSX code
+          const script = document.createElement('script');
+          script.type = 'text/babel';
+          script.text = code + '\nconst root = ReactDOM.createRoot(document.getElementById("root")); root.render(React.createElement(EmpireCoach));';
+          document.body.appendChild(script);
+        })
+        .catch(err => {
+          console.error('Error loading app:', err);
+          document.getElementById('root').innerHTML = '<div class="loading-screen"><div class="loading-logo" style="font-size:16px;max-width:80%;text-align:center;">Erreur de chargement. Recharge la page.</div></div>';
+        });
+    }
   </script>
 </body>
 </html>
