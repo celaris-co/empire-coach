@@ -1,0 +1,30 @@
+{
+  "name": "empire-coach",
+  "version": "1.0.0",
+  "description": "**Construis ton empire. Sans limite.**",
+  "main": "app.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celaris-co/empire-coach.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/celaris-co/empire-coach/issues"
+  },
+  "homepage": "https://github.com/celaris-co/empire-coach#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
