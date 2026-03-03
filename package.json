@@ -21,6 +21,7 @@
   "homepage": "https://github.com/celaris-co/empire-coach#readme",
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.4",
+    "terser": "^5.46.0",
     "vite": "^7.3.1"
   },
   "dependencies": {
