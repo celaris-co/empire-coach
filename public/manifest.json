@@ -1,0 +1,12 @@
+{
+  "name": "Empire Coach",
+  "short_name": "Empire Coach",
+  "description": "Construis ton empire. Sans limite. Parcours d'apprentissage infini alimenté par l'IA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080C",
+  "theme_color": "#D4AF37",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["education", "productivity", "business"]
+}
