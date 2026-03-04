@@ -1,6 +1,7 @@
 {
   "name": "empire-coach",
   "version": "1.0.0",
+  "type": "module",
   "description": "**Construis ton empire. Sans limite.**",
   "main": "app.js",
   "scripts": {
